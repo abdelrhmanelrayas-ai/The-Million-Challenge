@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التصويت | تحدي المليون</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-trophy text-gold"></i> تحدي المليون
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن البرنامج</a></li>
+                    <li><a href="rules.html">القانون</a></li>
+                    <li><a href="contestants.html">المتسابقون</a></li>
+                    <li><a href="dashboard.html">حسابي</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <div
+            style="max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-lg);">
+
+            <div style="text-align: center; margin-bottom: 30px;">
+                <div
+                    style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; border: 5px solid var(--color-gold);">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h1 style="color: var(--color-primary); margin-bottom: 10px;">عمر خالد</h1>
+                <p style="color: #666; font-size: 1.2rem;">مشروع تعليمي للأطفال "مستقبلي"</p>
+            </div>
+
+            <div
+                style="background: var(--color-offwhite); padding: 20px; border-radius: 10px; margin-bottom: 30px; line-height: 1.8; color: #555;">
+                <p>يهدف مشروعي إلى توفير منصة تفاعلية لتعليم الأطفال أساسيات البرمجة والروبوتيك في سن مبكرة، من خلال
+                    ألعاب تعليمية ممتعة ومناهج مبسطة باللغة العربية.</p>
+            </div>
+
+            <div style="text-align: center;">
+                <div class="alert"
+                    style="background: #fff3cd; color: #856404; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #ffeeba;">
+                    <i class="fas fa-exclamation-triangle"></i> تنبيه: لديك صوت واحد فقط. لا يمكنك التراجع بعد التأكيد.
+                </div>
+                <button onclick="confirmVote()" class="btn btn-primary" style="font-size: 1.5rem; padding: 15px 50px;">
+                    <i class="fas fa-vote-yea"></i> تصويت لهذا المتسابق
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Confirm Modal (Simple JS implementation in-line is fine for mockup, or main.js) -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p style="color: #888;">جميع الحقوق محفوظة © 2026 تحدي المليون</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        function confirmVote() {
+            if (confirm("هل أنت متأكد من منح صوتك لهذا المتسابق؟ هذه العملية نهائية.")) {
+                alert("تم تسجيل صوتك بنجاح!");
+                window.location.href = "results.html"; // Redirect to results for flow
+            }
+        }
+    </script>
+</body>
+
+</html>

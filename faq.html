@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة | تحدي المليون</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .accordion-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+
+        .accordion-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .accordion-content.active {
+            padding: 0 20px 20px 20px;
+            max-height: 200px;
+            /* Adjust as needed */
+        }
+
+        .accordion-header i {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-trophy text-gold"></i> تحدي المليون
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن البرنامج</a></li>
+                    <li><a href="rules.html">القانون</a></li>
+                    <li><a href="contestants.html">المتسابقون</a></li>
+                    <li><a href="dashboard.html">حسابي</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <h1 class="section-title text-center" style="display: block; margin-bottom: 50px;">الأسئلة الشائعة</h1>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    هل المسابقة تعتبر قماراً؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>لا، قطعاً. المسابقة لا تعتمد على الحظ أو المراهنة. رسوم الاشتراك هي رسوم إدارية فقط، والفوز يعتمد
+                        على تصويت الجمهور بنسبة 100%.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    هل يمكنني شراء أصوات؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>ممنوع منعاً باتاً. نظامنا يكتشف أي محاولات تلاعب أو شراء أصوات وهمية، وسيتم استبعاد أي متسابق
+                        يثبت تورطه في ذلك فوراً.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    كيف أستلم الجائزة؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>يتم تسليم الجوائز للفائزين في حفل ختامي، أو عبر تحويلات بنكية رسمية موثقة بعد التحقق من هوية
+                        الفائز.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    ماذا لو تعادلت الأصوات؟
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>في حالة التعادل، يتم تمديد فترة التصويت لمدة 24 ساعة إضافية لحسم النتيجة بين المتعادلين فقط.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p style="color: #888;">جميع الحقوق محفوظة © 2026 تحدي المليون</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

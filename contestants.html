@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتسابقون | تحدي المليون</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-trophy text-gold"></i> تحدي المليون
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن البرنامج</a></li>
+                    <li><a href="rules.html">القانون</a></li>
+                    <li><a href="contestants.html" class="active">المتسابقون</a></li>
+                    <li><a href="dashboard.html">حسابي</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <h1 class="section-title text-center" style="display: block; margin-bottom: 50px;">المتسابقون المتأهلون</h1>
+
+        <!-- Filters -->
+        <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
+            <button class="btn btn-primary">المرحلة الأولى</button>
+            <button class="btn btn-outline" style="color: var(--color-text-main); border-color: #ddd;">الأعلى
+                تقييماً</button>
+            <button class="btn btn-outline" style="color: var(--color-text-main); border-color: #ddd;">الأحدث</button>
+        </div>
+
+        <!-- Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+            <!-- Card 1 -->
+            <div class="contestant-card glass-card" style="overflow: hidden;">
+                <div
+                    style="height: 250px; background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center;">
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="color: var(--text-primary); margin-bottom: 5px;">عمر خالد</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">مشروع تعليمي
+                        للأطفال</p>
+                    <a href="voting.html" class="btn btn-outline"
+                        style="width: 100%; display: block; text-align: center;">عرض الملف والتصويت</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="contestant-card glass-card" style="overflow: hidden;">
+                <div
+                    style="height: 250px; background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center;">
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="color: var(--text-primary); margin-bottom: 5px;">سارة أحمد</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">تطبيق خدمة مجتمعية
+                    </p>
+                    <a href="voting.html" class="btn btn-outline"
+                        style="width: 100%; display: block; text-align: center;">عرض الملف والتصويت</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="contestant-card glass-card" style="overflow: hidden;">
+                <div
+                    style="height: 250px; background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center;">
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="color: var(--text-primary); margin-bottom: 5px;">كريم محمود</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">ابتكار هندسي جديد
+                    </p>
+                    <a href="voting.html" class="btn btn-outline"
+                        style="width: 100%; display: block; text-align: center;">عرض الملف والتصويت</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="contestant-card glass-card" style="overflow: hidden;">
+                <div
+                    style="height: 250px; background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center;">
+                </div>
+                <div style="padding: 20px;">
+                    <h3 style="color: var(--text-primary); margin-bottom: 5px;">نور علي</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">منصة تسويق حرفية
+                    </p>
+                    <a href="voting.html" class="btn btn-outline"
+                        style="width: 100%; display: block; text-align: center;">عرض الملف والتصويت</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p style="color: #888;">جميع الحقوق محفوظة © 2026 تحدي المليون</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

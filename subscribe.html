@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اشترك الآن | تحدي المليون</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #f4f7f6;">
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-trophy text-gold"></i> تحدي المليون
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن البرنامج</a></li>
+                    <li><a href="rules.html">القانون</a></li>
+                    <li><a href="contestants.html">المتسابقون</a></li>
+                    <li><a href="dashboard.html">حسابي</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding" style="min-height: 80vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="subscribe-wrapper glass-panel"
+                style="max-width: 900px; margin: 0 auto; overflow: hidden; display: flex; flex-direction: row-reverse; background: var(--glass-bg);">
+
+                <!-- Form Side -->
+                <div class="form-side" style="flex: 1; padding: 50px;">
+                    <h2 style="color: var(--accent-gold); margin-bottom: 10px;">انشئ حسابك</h2>
+                    <p style="color: #aaa; margin-bottom: 30px;">خطوة واحدة تفصلك عن المنافسة. الرسوم: 10 جنيه فقط.</p>
+
+                    <form action="dashboard.html" id="subscribeForm" novalidate>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600; color: white;">الاسم
+                                الكامل <span class="required-star">*</span></label>
+                            <input type="text" placeholder="الاسم كما في الهوية" style="width: 100%;" required>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600; color: white;">رقم
+                                الهاتف <span class="required-star">*</span></label>
+                            <input type="tel" placeholder="01xxxxxxxxx" style="width: 100%;" required>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600; color: white;">الرقم
+                                القومي <span class="required-star">*</span></label>
+                            <input type="text" maxlength="14" placeholder="الرقم القومي (14 رقم)" style="width: 100%;"
+                                required>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600; color: white;">البريد
+                                الإلكتروني <span class="required-star">*</span></label>
+                            <input type="email" placeholder="email@example.com" style="width: 100%;" required>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                <input type="checkbox" id="termsCheckbox"
+                                    style="width: 20px !important; height: 20px !important;">
+                                <span style="font-size: 0.9rem; color: #ccc;">أوافق على <a href="rules.html"
+                                        class="text-gold" style="text-decoration: underline;">القانون الرسمي
+                                        والشروط</a></span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">دفع واشتراك</button>
+                    </form>
+                </div>
+
+                <!-- Info Side -->
+                <div class="info-side"
+                    style="flex: 0.8; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); padding: 50px; color: var(--color-white); display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden;">
+                    <div style="position: relative; z-index: 2;">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--color-gold);">لماذا تشترك؟</h3>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                    <i class="fas fa-bullhorn text-gold"></i>
+                                </div>
+                                <span><b>فرصة للشهرة:</b> اعرض موهبتك أمام الملايين.</span>
+                            </li>
+                            <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                    <i class="fas fa-coins text-gold"></i>
+                                </div>
+                                <span><b>جوائز ضخمة:</b> مليون جنيه للفائز الأول.</span>
+                            </li>
+                            <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+                                <div
+                                    style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; flex-shrink: 0;">
+                                    <i class="fas fa-shield-alt text-gold"></i>
+                                </div>
+                                <span><b>نظام آمن:</b> بياناتك محمية ومشفرة.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simplified -->
+    <footer style="padding: 20px 0; background: transparent;">
+        <div class="container text-center">
+            <p style="color: #888;">جميع الحقوق محفوظة © 2026 تحدي المليون</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <style>
+        @media (max-width: 768px) {
+            .subscribe-wrapper {
+                flex-direction: column-reverse !important;
+            }
+        }
+    </style>
+</body>
+
+</html>
